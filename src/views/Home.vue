@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+      <section class="home">
+        <img src="../assets/vuelogo.png" alt="Vue Logo">
+      </section>
+      <!-- <tunes-song :song="song" /> -->
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+//import TunesSong from '@/components/tunes/TunesSong.vue'
+
+// see Yablko about Lazy Loading video 38 Vue3 CLI iTunes
+//const NiceImage = () => import(/* webpackChunkName: "nice_image" */ '@/components/NiceImage.vue')
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  //components: { TunesSong, },
+  //data() { return { song: '', } },
 }
 </script>
